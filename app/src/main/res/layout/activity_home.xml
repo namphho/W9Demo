@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transition.HomeActivity">
+
+    <Button
+        android:id="@+id/btn_object_animator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Object Animator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_transition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Transition"
+        app:layout_constraintEnd_toEndOf="@+id/btn_object_animator"
+        app:layout_constraintStart_toStartOf="@+id/btn_object_animator"
+        app:layout_constraintTop_toBottomOf="@+id/btn_object_animator" />
+
+    <Button
+        android:id="@+id/btn_shared_element"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Shared Element"
+        app:layout_constraintEnd_toEndOf="@+id/btn_transition"
+        app:layout_constraintStart_toStartOf="@+id/btn_transition"
+        app:layout_constraintTop_toBottomOf="@+id/btn_transition" />
+</androidx.constraintlayout.widget.ConstraintLayout>

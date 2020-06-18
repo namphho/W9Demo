@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme.ActivityMain">
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@transition/main_exit</item>
+        <item name="android:windowReenterTransition">@transition/main_reenter</item>
+    </style>
+
+    <style name="AppTheme.DetailAppTheme" >
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/detail_enter</item>
+        <item name="android:windowReturnTransition">@transition/detail_return</item>
+    </style>
+
+    <style name="AppTheme.DetailImage" >
+        <item name="android:windowSharedElementEnterTransition">@transition/detail_image</item>
+    </style>
+
+</resources>
