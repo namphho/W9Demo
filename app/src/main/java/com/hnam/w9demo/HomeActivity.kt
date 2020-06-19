@@ -1,11 +1,11 @@
-package com.hnam.w9demo.transition
+package com.hnam.w9demo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.hnam.w9demo.MainActivity
-import com.hnam.w9demo.R
+import com.hnam.w9demo.propertyanimation.PropertyAnimationAct
 import com.hnam.w9demo.sharedelement.MainSharedElementActivity
+import com.hnam.w9demo.transition.MainActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -14,7 +14,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         btn_object_animator.setOnClickListener {
-
+            val i = Intent(this, PropertyAnimationAct::class.java)
+            startActivity(i)
         }
         btn_transition.setOnClickListener{
             val i = Intent(this, MainActivity::class.java)

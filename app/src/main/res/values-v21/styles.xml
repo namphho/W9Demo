@@ -15,6 +15,7 @@
     </style>
 
     <style name="AppTheme.DetailImage" >
+        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowSharedElementEnterTransition">@transition/detail_image</item>
     </style>
 

@@ -14,7 +14,7 @@
 
         <activity android:name=".sharedelement.DetailSharedElement" />
         <activity android:name=".sharedelement.MainSharedElementActivity" />
-        <activity android:name=".transition.HomeActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +25,14 @@
             android:name=".transition.DetailActivity"
             android:theme="@style/AppTheme.DetailAppTheme" />
         <activity
-            android:name=".MainActivity"
+            android:name=".transition.MainActivity"
             android:theme="@style/AppTheme.ActivityMain" />
+
+
         <activity android:name=".sharedelement.DetailSharedBActivity"
             android:theme="@style/AppTheme.DetailImage"/>
+        <activity android:name=".propertyanimation.PropertyAnimationAct"
+            android:screenOrientation="fullSensor"/>
     </application>
 
 </manifest>
